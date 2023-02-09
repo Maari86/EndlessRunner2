@@ -47,7 +47,8 @@ GameObject:
   - component: {fileID: 5399182068555381977}
   - component: {fileID: 5399182068555381958}
   - component: {fileID: 5399182068555381956}
-  - component: {fileID: 5399182068555381959}
+  - component: {fileID: 4136464434795687406}
+  - component: {fileID: 5238202104545558099}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -113,7 +114,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: b23c7f8f906710a488aeaa24ce400a2b, type: 3}
   m_Color: {r: 0.9622642, g: 0.9386615, b: 0.9386615, a: 1}
   m_FlipX: 0
@@ -263,7 +264,7 @@ MonoBehaviour:
   components:
   - {fileID: 5399182068555381976}
   - {fileID: 5399182068555381958}
---- !u!114 &5399182068555381959
+--- !u!114 &4136464434795687406
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -272,12 +273,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 5399182068555381983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8cb35d63e1d759459f6d3c43fbd8d21, type: 3}
+  m_Script: {fileID: 11500000, guid: ec14277355a2c4041ba0f1e0a6cb15ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPoint: {fileID: 6455874535058498206, guid: 7e61e625730c287478bde5aac02d0845, type: 3}
-  distanceText: {fileID: 4532730097210112881, guid: 05f7d51391a5f5a459d7c0537d3ccc41, type: 3}
-  scoreTextObj: {fileID: 4532730097210112880, guid: 05f7d51391a5f5a459d7c0537d3ccc41, type: 3}
+  prefabToSpawn:
+  - {fileID: 4249354785557104465, guid: 55199ee8259665f4497d6e9567bc0e7d, type: 3}
+  - {fileID: 2093597829482309352, guid: a95b1597c14cac843a45897874d0d766, type: 3}
+  spawnDistance:
+  - 100
+  - 300
+  deactivateDistance:
+  - 300
+  - 600
+--- !u!114 &5238202104545558099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5399182068555381983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb1e9929488e55449d9ffa0267d873c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 0
+  distanceText: {fileID: 1981078693189572690, guid: 26cfb6942e96ecf4dbd17ebc79b97d59, type: 3}
 --- !u!1 &5399182069368523072
 GameObject:
   m_ObjectHideFlags: 0

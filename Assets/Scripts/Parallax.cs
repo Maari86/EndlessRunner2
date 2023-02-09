@@ -15,7 +15,7 @@ public class Parallax : MonoBehaviour
         cam = GameObject.Find("CM vcam1");
         startPos = transform.position.x;
         length = GetComponent<SpriteRenderer>().bounds.size.x;
-        
+
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class Parallax : MonoBehaviour
         float distance = (cam.transform.position.x * parallaxEffect);
         transform.position = new Vector3(startPos + distance, transform.position.y, transform.position.z);
 
-        if(temp > startPos + length)
+        if (temp > startPos + length)
         {
             startPos += length;
         }

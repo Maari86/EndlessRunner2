@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 3052cbb6793663648bc2797950ee56a4, type: 3}
   m_Color: {r: 0, g: 1, b: 0.8843713, a: 1}
   m_FlipX: 0
@@ -125,4 +125,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 100
-  healthbar: {fileID: 8865702434446790142, guid: 753438eaf5fb3594fa7c11739f518b9d, type: 3}

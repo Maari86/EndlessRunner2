@@ -37,7 +37,7 @@ public class ScoreCounter : MonoBehaviour
         scoreText.rectTransform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
 
         score += 10;
-        
+
         for (float i = 1.2f; i >= 1f; i -= 0.05f)
         {
             scoreText.rectTransform.localScale = new Vector3(i, i, i);

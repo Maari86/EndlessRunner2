@@ -9,6 +9,13 @@ TagManager:
   - CheckPoint
   - Traps
   - Enemy
+  - Sky
+  - Cloud
+  - Mountain
+  - foreground
+  - Trees
+  - Snow
+  - Desert
   layers:
   - Default
   - TransparentFX
@@ -45,4 +52,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Sky
+    uniqueID: 3767014183
+    locked: 0
+  - name: Mountain
+    uniqueID: 2078525743
+    locked: 0
+  - name: Rocks
+    uniqueID: 1714330429
+    locked: 0
+  - name: Cloud
+    uniqueID: 545180319
+    locked: 0
+  - name: Trees
+    uniqueID: 1626808985
+    locked: 0
+  - name: Foreground
+    uniqueID: 2647963225
     locked: 0

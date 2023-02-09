@@ -24,6 +24,7 @@ public class UIManager : MonoBehaviour
         GameObject player = Instantiate(playerPrefabs[characterIndex], lastCheckPointPos, Quaternion.identity);
         Vcam.m_Follow = player.transform;
        // GameObject.FindGameObjectWithTag("Player").transform.position = lastCheckPointPos;
+
     }
     private void OnEnable()
     {

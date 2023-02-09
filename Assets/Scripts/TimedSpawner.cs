@@ -8,6 +8,10 @@ public class TimedSpawner : MonoBehaviour
     public bool stopSpawning;
     public float spawnTime;
     public float spawnDelay;
+    public float destroyTime;
+    private int objectCount = 0;
+
+    private GameObject spawnedObject;
 
     // Start is called before the first frame update
     void Start()
@@ -16,13 +20,24 @@ public class TimedSpawner : MonoBehaviour
     }
     public void Spawner()
     {
-        Instantiate(spawning, transform.position, transform.rotation);
+        spawnedObject = Instantiate(spawning, transform.position, transform.rotation);
+        spawnedObject.name = "SpawnedObject_" + objectCount;
+        objectCount++;
+        Invoke("DeactivateObject", destroyTime);
         if (stopSpawning)
         {
             CancelInvoke("Spawner");
         }
-
     }
 
-   
+    private void DeactivateObject()
+    {
+        if (spawnedObject != null)
+        {
+         
+            Destroy(spawnedObject);
+        }
+            
+    }
+
 }
