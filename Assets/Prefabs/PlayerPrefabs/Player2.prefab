@@ -119,8 +119,8 @@ GameObject:
   - component: {fileID: 7325909120419728846}
   - component: {fileID: 7325909120419728849}
   - component: {fileID: 7325909120419728851}
-  - component: {fileID: 1192878936653666147}
   - component: {fileID: 204230678497531801}
+  - component: {fileID: 5513707162862873399}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player
@@ -336,28 +336,6 @@ MonoBehaviour:
   components:
   - {fileID: 7325909120419728847}
   - {fileID: 7325909120419728849}
---- !u!114 &1192878936653666147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7325909120419728840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec14277355a2c4041ba0f1e0a6cb15ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabToSpawn:
-  - {fileID: 5693429491881474609, guid: 9f852ddf759cfde45bd4c4cd23c815f6, type: 3}
-  - {fileID: 2093597829482309352, guid: a95b1597c14cac843a45897874d0d766, type: 3}
-  - {fileID: 6616265974791586082, guid: 48e322d74910e314a9e9776496aed55e, type: 3}
-  - {fileID: 510685383807489437, guid: 067e6313621439f438295e46bfd4262f, type: 3}
-  spawnDistance:
-  - 150
-  - 100
-  - 350
-  - 300
 --- !u!114 &204230678497531801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,6 +350,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 0
   distanceText: {fileID: 1981078693189572690, guid: 26cfb6942e96ecf4dbd17ebc79b97d59, type: 3}
+--- !u!114 &5513707162862873399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7325909120419728840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956bb365e3ff4c84fa0ee9915060e9e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 2093597829482309352, guid: a95b1597c14cac843a45897874d0d766, type: 3}
+  secondPrefabToSpawn: {fileID: 2064500945887266630, guid: 03789a49485fa9944b215c1ce7dbc3af, type: 3}
+  thirdPrefabToSpawn: {fileID: 2516860117080460987, guid: 77ec7aebff07d0142a0ea19a637503db, type: 3}
+  fourthPrefabToSpawn: {fileID: 4249354785557104465, guid: 55199ee8259665f4497d6e9567bc0e7d, type: 3}
+  spawnDistance: 200
+  deactivateDistance: 150
 --- !u!1001 &2707727933403493978
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -27,7 +27,8 @@ public class ObjectSpawner : MonoBehaviour
         {
             if (playerDistance.distance >= spawnDistance[i] && !hasSpawned[i])
             {
-                Vector3 spawnPosition = playerTransform.position + playerTransform.forward * 30;
+                Vector3 spawnPosition = playerTransform.position + playerTransform.forward * 30 + new Vector3(Random.Range(-10.0f, 10.0f), 0, Random.Range(-10.0f, 10.0f));
+
                 spawnedObjects[i] = Instantiate(prefabToSpawn[i], spawnPosition, Quaternion.identity);
                 hasSpawned[i] = true;
             }

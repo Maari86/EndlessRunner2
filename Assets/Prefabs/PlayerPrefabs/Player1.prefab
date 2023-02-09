@@ -47,8 +47,8 @@ GameObject:
   - component: {fileID: 5399182068555381977}
   - component: {fileID: 5399182068555381958}
   - component: {fileID: 5399182068555381956}
-  - component: {fileID: 4136464434795687406}
   - component: {fileID: 5238202104545558099}
+  - component: {fileID: -5815698524251703198}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -264,27 +264,6 @@ MonoBehaviour:
   components:
   - {fileID: 5399182068555381976}
   - {fileID: 5399182068555381958}
---- !u!114 &4136464434795687406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5399182068555381983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec14277355a2c4041ba0f1e0a6cb15ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabToSpawn:
-  - {fileID: 4249354785557104465, guid: 55199ee8259665f4497d6e9567bc0e7d, type: 3}
-  - {fileID: 2093597829482309352, guid: a95b1597c14cac843a45897874d0d766, type: 3}
-  spawnDistance:
-  - 100
-  - 300
-  deactivateDistance:
-  - 300
-  - 600
 --- !u!114 &5238202104545558099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,6 +278,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 0
   distanceText: {fileID: 1981078693189572690, guid: 26cfb6942e96ecf4dbd17ebc79b97d59, type: 3}
+--- !u!114 &-5815698524251703198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5399182068555381983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956bb365e3ff4c84fa0ee9915060e9e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 2093597829482309352, guid: a95b1597c14cac843a45897874d0d766, type: 3}
+  secondPrefabToSpawn: {fileID: 2064500945887266630, guid: 03789a49485fa9944b215c1ce7dbc3af, type: 3}
+  thirdPrefabToSpawn: {fileID: 4249354785557104465, guid: 55199ee8259665f4497d6e9567bc0e7d, type: 3}
+  fourthPrefabToSpawn: {fileID: 2516860117080460987, guid: 77ec7aebff07d0142a0ea19a637503db, type: 3}
+  spawnDistance: 200
+  deactivateDistance: 150
 --- !u!1 &5399182069368523072
 GameObject:
   m_ObjectHideFlags: 0

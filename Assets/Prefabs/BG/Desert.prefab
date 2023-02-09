@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2093597829482309353}
   m_Layer: 0
-  m_Name: DesertBG1
+  m_Name: Desert
   m_TagString: Desert
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -383,7 +383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1900494931640235696}
   - component: {fileID: 789874595450282698}
-  - component: {fileID: 7702679812093166990}
+  - component: {fileID: 1501230038949135982}
   m_Layer: 0
   m_Name: Activate
   m_TagString: Untagged
@@ -419,8 +419,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 5693429491881474609, guid: 9f852ddf759cfde45bd4c4cd23c815f6, type: 3}
---- !u!58 &7702679812093166990
-CircleCollider2D:
+--- !u!61 &1501230038949135982
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -432,9 +432,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 2.638896}
+  m_Offset: {x: 0, y: 5.2489614}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 3.138896
+  m_Size: {x: 1, y: 20.890795}
+  m_EdgeRadius: 0
 --- !u!1 &8112914439529309699
 GameObject:
   m_ObjectHideFlags: 0
